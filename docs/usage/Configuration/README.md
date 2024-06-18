@@ -7,7 +7,8 @@
     * `tagFormat`
       * TODO:
   * `plugins`
-    * returns `[]`
+    * `["pluginName1", "pluginName2", ['pluginNamei', optionsSpecificToPlugini], ...]`
+      * == array of plugins can be declared 
       * default 
         ```
         ['@semantic-release/commit-analyzer', '@semantic-release/release-notes-generator', '@semantic-release/npm', '@semantic-release/github']
