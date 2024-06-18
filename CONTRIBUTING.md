@@ -58,7 +58,7 @@ Please provide as much detail and context as possible and fill the information r
 
 ### New plugin request
 
-[Plugins](docs/usage/plugins.md) are a great way to extend **semantic-release** capabilities, integrate with other systems and support new project type.
+[Plugins](docs/usage/plugins/plugins.md) are a great way to extend **semantic-release** capabilities, integrate with other systems and support new project type.
 Please provide as much detail and context as possible and fill the information requested in the [plugin suggestion template](https://github.com/semantic-release/semantic-release/issues/new?template=03_plugin_suggestion.md).
 
 ## Submitting a Pull Request

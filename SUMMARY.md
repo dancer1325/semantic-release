@@ -2,17 +2,17 @@
 
 ## Usage
 
-- [Getting started](docs/usage/getting-started.md)
-- [Installation](docs/usage/installation.md)
-- [CI Configuration](docs/usage/ci-configuration.md)
-- [Configuration](docs/usage/configuration.md)
-- [Plugins](docs/usage/plugins.md)
+- [Getting started](docs/usage/GettingStarted/getting-started.md)
+- [Installation](docs/usage/Installation/installation.md)
+- [CI Configuration](docs/usage/CI Configuration/ci-configuration.md)
+- [Configuration](docs/usage/Configuration/configuration.md)
+- [Plugins](docs/usage/plugins/plugins.md)
 - [Release Workflow configuration](docs/usage/workflow-configuration.md)
-- [Shareable configurations](docs/usage/shareable-configurations.md)
+- [Shareable configurations](docs/usage/shareableConfigurations/shareable-configurations.md)
 
 ## Extending
 
-- [Plugins](docs/extending/plugins-list.md)
+- [Plugins](docs/extending/plugins/plugins-list.md)
 - [Shareable configuration](docs/extending/shareable-configurations-list.md)
 
 ## Recipes

@@ -38,8 +38,8 @@
 - Publish on different distribution channels (such as [npm dist-tags](https://docs.npmjs.com/cli/dist-tag)) based on git merges
 - Integrate with your [continuous integration workflow](docs/recipes/release-workflow/README.md#ci-configurations)
 - Avoid potential errors associated with manual releases
-- Support any [package managers and languages](docs/recipes/release-workflow/README.md#package-managers-and-languages) via [plugins](docs/usage/plugins.md)
-- Simple and reusable configuration via [shareable configurations](docs/usage/shareable-configurations.md)
+- Support any [package managers and languages](docs/recipes/release-workflow/README.md#package-managers-and-languages) via [plugins](docs/usage/plugins/plugins.md)
+- Simple and reusable configuration via [shareable configurations](docs/usage/shareableConfigurations/shareable-configurations.md)
 - Support for [npm package provenance](https://github.com/semantic-release/npm#npm-provenance) that promotes increased supply-chain security via signed attestations on GitHub Actions
 
 ## How does it work?
@@ -85,41 +85,47 @@ See example workflows in the following recipes:
 - [Pre-releases](docs/recipes/release-workflow/pre-releases.md#publishing-pre-releases)
 
 ### Release steps
-* Once the tests are run -> `semantic-release` will execute the following steps:
+* each one -- is implemented by -- 👁️ configurable plugins 👁️
+* How do they work?
+  * once the tests are run -> `semantic-release` will execute the following steps ⚠️in this order ⚠️ 
 
-| Step              | Description                                                                                                                     |
-| ----------------- | ------------------------------------------------------------------------------------------------------------------------------- |
-| Verify Conditions | Verify all the conditions to proceed with the release.                                                                          |
-| Get last release  | Obtain the commit corresponding to the last release by analyzing [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging). |
-| Analyze commits   | Determine the type of release based on the commits added since the last release.                                                |
-| Verify release    | Verify the release conformity.                                                                                                  |
-| Generate notes    | Generate release notes for the commits added since the last release.                                                            |
-| Create Git tag    | Create a Git tag corresponding to the new release version.                                                                      |
-| Prepare           | Prepare the release.                                                                                                            |
-| Publish           | Publish the release.                                                                                                            |
-| Notify            | Notify of new releases or errors.                                                                                               |
+| Step               | Required | Description                                                                                                                     |
+|--------------------|----------|---------------------------------------------------------------------------------------------------------------------------------|
+| `verifyConditions` | No       | Verify all the conditions to proceed with the release -- _Example:_ correct configuration, auth token are valid--               |
+| Get last release   | ?        | Obtain the commit corresponding to the last release by analyzing [Git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging). |
+| `analyzeCommits`   | Yes      | Based on the commits added since the last release - > determine the type of release                                             |
+| `verifyRelease`    | No       | Verify the release conformity                                                                                                   |
+| `generateNotes`    | No       | Generate release notes / commits added since the last release.                                                                  |
+| Create Git tag     | ?        | Create a Git tag corresponding to the new release version.                                                                      |
+| `prepare`          | No       | Prepare the release.                                                                                                            |
+| `publish`          | No       | Publish the release.                                                                                                            |
+| Notify             | ?        | Notify of new releases or errors.                                                                                               |
+| `addChannel`       | No       | Add a release channel -- _Example:_ Add npm dist-tag --                                                                         |
+| `success`          | No       | Notify a new release                                                                                                            |
+| `fail`             | No       | Notify a failed release                                                                                                         |
+
 
 ## Requirements
 
 In order to use **semantic-release** you need:
 
 - To host your code in a [Git repository](https://git-scm.com)
-- Use a CI service that allows you to [securely set up credentials](docs/usage/ci-configuration.md#authentication)
+- Use a CI service that allows you to [securely set up credentials](docs/usage/CI Configuration/ci-configuration.md#authentication)
 - A Git CLI version that meets [our version requirement](docs/support/git-version.md) installed in your CI environment
 - A [Node.js](https://nodejs.org) version that meets [our version requirement](docs/support/node-version.md) installed in your CI environment
 
 ## Documentation
 
 - Usage
-  - [Getting started](docs/usage/getting-started.md)
-  - [Installation](docs/usage/installation.md)
-  - [CI Configuration](docs/usage/ci-configuration.md)
-  - [Configuration](docs/usage/configuration.md#configuration)
-  - [Plugins](docs/usage/plugins.md)
+  - [Getting started](docs/usage/GettingStarted/getting-started.md)
+  - [Installation](docs/usage/Installation/installation.md)
+  - [CI Configuration](docs/usage/CI Configuration/ci-configuration.md)
+  - [Configuration](docs/usage/Configuration/configuration.md#configuration)
+  - [Plugins](docs/usage/plugins/plugins.md)
   - [Workflow configuration](docs/usage/workflow-configuration.md)
-  - [Shareable configurations](docs/usage/shareable-configurations.md)
+  - [Shareable configurations](docs/usage/shareableConfigurations/shareable-configurations.md)
 - Extending
-  - [Plugins](docs/extending/plugins-list.md)
+  - [Plugins](docs/extending/plugins/plugins-list.md)
   - [Shareable configuration](docs/extending/shareable-configurations-list.md)
 - Recipes
   - [CI configurations](docs/recipes/ci-configurations/README.md)
