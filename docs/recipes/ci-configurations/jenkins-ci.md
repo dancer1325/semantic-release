@@ -2,9 +2,9 @@
 
 ## Environment variables
 
-The [Authentication](../../usage/ci-configuration.md#authentication) environment variables can be configured in [Jenkins Project Settings](https://www.jenkins.io/doc/pipeline/tour/environment/)..
+The [Authentication](../../usage/CI%20Configuration/ci-configuration.md#authentication) environment variables can be configured in [Jenkins Project Settings](https://www.jenkins.io/doc/pipeline/tour/environment/)..
 
-Alternatively, the default `NPM_TOKEN` and `GH_TOKEN` can be easily [setup with semantic-release-cli](../../usage/getting-started.md#getting-started).
+Alternatively, the default `NPM_TOKEN` and `GH_TOKEN` can be easily [setup with semantic-release-cli](../../usage/GettingStarted/getting-started.md#getting-started).
 
 ## Node.js project configuration
 
@@ -50,7 +50,7 @@ pipeline {
 
 ### `package.json` configuration for a Node job
 
-A `package.json` is required only for [local](../../usage/installation.md#local-installation) **semantic-release** installation.
+A `package.json` is required only for [local](../../usage/Installation/installation.md#local-installation) **semantic-release** installation.
 
 ```json
 {

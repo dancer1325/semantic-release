@@ -78,9 +78,9 @@ Type: `Object`
 
 **semantic-release** options.
 
-Can be used to set any [core option](../usage/configuration.md#configuration) or [plugin options](../usage/plugins.md#configuration).
+Can be used to set any [core option](../usage/Configuration/configuration.md#configuration) or [plugin options](../usage/plugins/plugins.md#configuration).
 
-Each option, will take precedence over options configured in the [configuration file](../usage/configuration.md#configuration) and [shareable configurations](../usage/configuration.md#extends).
+Each option, will take precedence over options configured in the [configuration file](../usage/Configuration/configuration.md#configuration) and [shareable configurations](../usage/Configuration/configuration.md#extends).
 
 #### config
 

@@ -10,7 +10,7 @@ This enables:
 
 See [Release workflow recipes](../recipes/release-workflow/README.md#release-workflow) for detailed examples.
 
-The release workflow is configured via the [branches option](./configuration.md#branches) which accepts a single or an array of branch definitions.
+The release workflow is configured via the [branches option](Configuration/configuration.md#branches) which accepts a single or an array of branch definitions.
 Each branch can be defined either as a string, a [glob](https://github.com/micromatch/micromatch#matching-features) or an object. For string and glob definitions each [property](#branches-properties) will be defaulted.
 
 A branch can be defined as one of three types:
