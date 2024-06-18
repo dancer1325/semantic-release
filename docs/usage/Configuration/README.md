@@ -12,6 +12,7 @@
         ```
         ['@semantic-release/commit-analyzer', '@semantic-release/release-notes-generator', '@semantic-release/npm', '@semantic-release/github']
         ```
+      * if you declare it -> override the default one 
     * `-p` \ `--plugins`
       * for CLI arguments
     * allows
