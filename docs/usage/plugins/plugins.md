@@ -1,6 +1,6 @@
 # Plugins
 
-Each [release step](../../README.md#release-steps) is implemented by configurable plugins. This allows for support of different [commit message formats](../../README.md#commit-message-format), release note generators and publishing platforms.
+Each [release step](../../../README.md#release-steps) is implemented by configurable plugins. This allows for support of different [commit message formats](../../../README.md#commit-message-format), release note generators and publishing platforms.
 
 A plugin is a npm module that can implement one or more of the following steps:
 
@@ -35,7 +35,7 @@ These four plugins are already part of **semantic-release** and are listed in or
 
 ### Additional plugins
 
-[Additional plugins](../extending/plugins-list.md) have to be installed via npm:
+[Additional plugins](../../extending/plugins/plugins-list.md) have to be installed via npm:
 
 ```bash
 $ npm install @semantic-release/git @semantic-release/changelog -D
@@ -43,7 +43,7 @@ $ npm install @semantic-release/git @semantic-release/changelog -D
 
 ## Plugins declaration and execution order
 
-Each plugin must be configured with the [`plugins` options](./configuration.md#plugins) by specifying the list of plugins by npm module name.
+Each plugin must be configured with the [`plugins` options](../Configuration/configuration.md#plugins) by specifying the list of plugins by npm module name.
 
 ```json
 {
@@ -53,7 +53,7 @@ Each plugin must be configured with the [`plugins` options](./configuration.md#p
 
 **Note:** If the `plugins` option is defined, it overrides the default plugin list, rather than merging with it.
 
-For each [release step](../../README.md#release-steps) the plugins that implement that step will be executed in the order in which they are defined.
+For each [release step](../../../README.md#release-steps) the plugins that implement that step will be executed in the order in which they are defined.
 
 ```json
 {
