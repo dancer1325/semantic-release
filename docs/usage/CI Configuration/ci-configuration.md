@@ -34,7 +34,7 @@ Alternatively the Git authentication can be set up via [SSH keys](../../recipes/
 
 ### Authentication for plugins
 
-Most **semantic-release** [plugins](../plugins.md) require setting up authentication in order to publish to a package manager registry. The default [@semantic-release/npm](https://github.com/semantic-release/npm#environment-variables) and [@semantic-release/github](https://github.com/semantic-release/github#environment-variables) plugins require the following environment variables:
+Most **semantic-release** [plugins](../plugins/plugins.md) require setting up authentication in order to publish to a package manager registry. The default [@semantic-release/npm](https://github.com/semantic-release/npm#environment-variables) and [@semantic-release/github](https://github.com/semantic-release/github#environment-variables) plugins require the following environment variables:
 
 | Variable    | Description                                                                                                                                                                                                                                                                                                               |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -80,7 +80,7 @@ If using npm hook scripts is not possible, and alternative solution is to [`@sem
 
 ## Is there a way to preview which version would currently get published?
 
-Yes with the [dry-run options](../usage/configuration.md#dryrun) which prints to the console the next version to be published and the release notes.
+Yes with the [dry-run options](../usage/Configuration/configuration.md#dryrun) which prints to the console the next version to be published and the release notes.
 
 ## Can I use semantic-release to publish non-JavaScript packages?
 
@@ -88,13 +88,13 @@ Yes, **semantic-release** is a Node CLI application, but it can be used to publi
 
 To publish a non-Node package (without a `package.json`) you would need to:
 
-- Use a [global](../usage/installation.md#global-installation) **semantic-release** installation
-- Set **semantic-release** [options](../usage/configuration.md#options) via [CLI arguments or `.rc` file](../usage/configuration.md#configuration)
+- Use a [global](../usage/Installation/installation.md#global-installation) **semantic-release** installation
+- Set **semantic-release** [options](../usage/Configuration/configuration.md#options) via [CLI arguments or `.rc` file](../usage/Configuration/configuration.md#configuration)
 - Make sure your CI job executing the `semantic-release` command has access to a version of Node that [meets our version requirement](./node-version.md) to execute the `semantic-release` command
 
 See the [CI configuration recipes](../recipes/release-workflow/README.md#ci-configurations) for more details on specific CI environments.
 
-In addition, you will need to configure the **semantic-release** [plugins](../usage/plugins.md#plugins) to disable the [`@semantic-release/npm`](https://github.com/semantic-release/npm) plugin which is used by default and use a plugin for your project type.
+In addition, you will need to configure the **semantic-release** [plugins](../usage/plugins/plugins.md#plugins) to disable the [`@semantic-release/npm`](https://github.com/semantic-release/npm) plugin which is used by default and use a plugin for your project type.
 
 If there is no specific plugin for your project type you can use the [`@semantic-release/exec`](https://github.com/semantic-release/exec) plugin to publish the release with a shell command.
 
@@ -125,14 +125,14 @@ See the [package managers and languages recipes](../recipes/release-workflow/REA
 
 Yes, **semantic-release** can be used with any CI service, as long as it provides:
 
-- A way to set [authentication](../usage/ci-configuration.md#authentication) via environment variables
-- A way to guarantee that the `semantic-release` command is [executed only after all the tests of all the jobs in the CI build pass](../usage/ci-configuration.md#run-semantic-release-only-after-all-tests-succeeded)
+- A way to set [authentication](../usage/CI%20Configuration/ci-configuration.md#authentication) via environment variables
+- A way to guarantee that the `semantic-release` command is [executed only after all the tests of all the jobs in the CI build pass](../usage/CI%20Configuration/ci-configuration.md#run-semantic-release-only-after-all-tests-succeeded)
 
 See the [CI configuration recipes](../recipes/release-workflow/README.md#ci-configurations) for more details on specific CI environments.
 
 ## Can I run semantic-release on my local machine rather than on a CI server?
 
-Yes, you can by explicitly setting the [`--no-ci` CLI option](../usage/configuration.md#ci) option. You will also have to set the required [authentication](../usage/ci-configuration.md#authentication) via environment variables on your local machine, for example:
+Yes, you can by explicitly setting the [`--no-ci` CLI option](../usage/Configuration/configuration.md#ci) option. You will also have to set the required [authentication](../usage/CI%20Configuration/ci-configuration.md#authentication) via environment variables on your local machine, for example:
 
 ```bash
 $ NPM_TOKEN=<your_npm_token> GH_TOKEN=<your_github_token> npx semantic-release --no-ci
@@ -148,7 +148,7 @@ See the [GitLab CI recipes](../recipes/ci-configurations/gitlab-ci.md#using-sema
 
 ## Can I use semantic-release with any Git hosted environment?
 
-By default **semantic-release** uses the [`@semantic-release/github`](https://github.com/semantic-release/github) plugin to publish a [GitHub release](https://help.github.com/articles/about-releases). For other Git hosted environment the [`@semantic-release/git`](https://github.com/semantic-release/git) and [`@semantic-release/changelog`](https://github.com/semantic-release/changelog) plugins can be used via [plugins configuration](../usage/plugins.md).
+By default **semantic-release** uses the [`@semantic-release/github`](https://github.com/semantic-release/github) plugin to publish a [GitHub release](https://help.github.com/articles/about-releases). For other Git hosted environment the [`@semantic-release/git`](https://github.com/semantic-release/git) and [`@semantic-release/changelog`](https://github.com/semantic-release/changelog) plugins can be used via [plugins configuration](../usage/plugins/plugins.md).
 
 See the [`@semantic-release/git`](https://github.com/semantic-release/git#semantic-releasegit) [`@semantic-release/changelog`](https://github.com/semantic-release/changelog#semantic-releasechangelog) plugins documentation for more details.
 
@@ -244,7 +244,7 @@ See [“Introduction to SemVer” - Irina Gebauer](https://blog.greenkeeper.io/i
 
 **semantic-release** has a full unit and integration test suite that tests `npm` publishes against the [verdaccio](https://www.npmjs.com/package/verdaccio).
 
-In addition, the [verify conditions step](../../README.md#release-steps) verifies that all necessary conditions for proceeding with a release are met, and a new release will be performed [only if all your tests pass](../usage/ci-configuration.md#run-semantic-release-only-after-all-tests-succeeded).
+In addition, the [verify conditions step](../../README.md#release-steps) verifies that all necessary conditions for proceeding with a release are met, and a new release will be performed [only if all your tests pass](../usage/CI%20Configuration/ci-configuration.md#run-semantic-release-only-after-all-tests-succeeded).
 
 ## What is npx?
 
