@@ -14,7 +14,7 @@ Then in the CI environment:
 npx semantic-release
 ```
 
-**Note:** `npx` is a tool bundled with `npm@>=5.2.0`. It is used to conveniently find the semantic-release binary and to execute it. See [What is npx](../support/FAQ.md#what-is-npx) for more details.
+**Note:** `npx` is a tool bundled with `npm@>=5.2.0`. It is used to conveniently find the semantic-release binary and to execute it. See [What is npx](../../support/FAQ.md#what-is-npx) for more details.
 
 ## Global installation
 
@@ -48,4 +48,4 @@ npx semantic-release
    }
    ```
 4. `npx` is a tool bundled with `npm@>=5.2.0`. You can use it to install (and run) the **semantic-release** binary.
-   See [What is npx](../support/FAQ.md#what-is-npx) for more details.
+   See [What is npx](../../support/FAQ.md#what-is-npx) for more details.
