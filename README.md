@@ -69,20 +69,24 @@
 | `perf(pencil): remove graphiteWidth option`<br><br>`BREAKING CHANGE: The graphiteWidth option has been removed.`<br>`The default graphite width of 10mm is always used for performance reasons.` | ~~Major~~ Breaking Release <br /> (Note that the `BREAKING CHANGE: ` token must be in the footer of the commit) |
 
 ### Automation with CI
-* TODO:
-**semantic-release** is meant to be executed on the CI environment after every successful build on the release branch.
-This way no human is directly involved in the release process and the releases are guaranteed to be [unromantic and unsentimental](https://github.com/dominictarr/sentimental-versioning#readme).
+* Goal
+  * **semantic-release** is desired to be executed
+    * on the CI environment
+      * == no human is directly involved 
+    * after every successful build on the release branch
 
 ### Triggering a release
-* TODO:
-For each new commit added to one of the release branches (for example: `master`, `main`, `next`, `beta`), with `git push` or by merging a pull request or merging from another branch, a CI build is triggered and runs the `semantic-release` command to make a release if there are codebase changes since the last release that affect the package functionalities.
+* Independently the git strategy used (https://www.atlassian.com/git/tutorials/comparing-workflows, [feature branch workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow), ...) 
+  * Based on the git webhooks set up (_Example:_ onPush, onMerge, ...) -> CI build is triggered
+  * `semantic-release` command is triggered
 
-**semantic-release** offers various ways to control the timing, the content and the audience of published releases.
-See example workflows in the following recipes:
-
-- [Using distribution channels](docs/recipes/release-workflow/distribution-channels.md#publishing-on-distribution-channels)
-- [Maintenance releases](docs/recipes/release-workflow/maintenance-releases.md#publishing-maintenance-releases)
-- [Pre-releases](docs/recipes/release-workflow/pre-releases.md#publishing-pre-releases)
+* You can control the 
+  * timing
+    * _Example:_ [Maintenance releases](docs/recipes/release-workflow/maintenance-releases.md#publishing-maintenance-releases)
+  * content
+    * _Example:_ [Pre-releases](docs/recipes/release-workflow/pre-releases.md#publishing-pre-releases)
+  * audience of published releases
+    * _Example:_ [Using distribution channels](docs/recipes/release-workflow/distribution-channels.md#publishing-on-distribution-channels)
 
 ### Release steps
 * each one -- is implemented by -- 👁️ configurable plugins 👁️
