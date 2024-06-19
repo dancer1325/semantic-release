@@ -90,7 +90,7 @@ To publish a non-Node package (without a `package.json`) you would need to:
 
 - Use a [global](../usage/Installation/installation.md#global-installation) **semantic-release** installation
 - Set **semantic-release** [options](../usage/Configuration/configuration.md#options) via [CLI arguments or `.rc` file](../usage/Configuration/configuration.md#configuration)
-- Make sure your CI job executing the `semantic-release` command has access to a version of Node that [meets our version requirement](./node-version.md) to execute the `semantic-release` command
+- Make sure your CI job executing the `semantic-release` command has access to a version of Node that [meets our version requirement](Node version/node-version.md) to execute the `semantic-release` command
 
 See the [CI configuration recipes](../recipes/release-workflow/README.md#ci-configurations) for more details on specific CI environments.
 

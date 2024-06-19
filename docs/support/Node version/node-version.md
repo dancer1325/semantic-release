@@ -5,7 +5,7 @@
 **semantic-release** is meant to be used in a CI environment as a development support tool, not as a production dependency.
 Therefore, the only constraint is to run the `semantic-release` in a CI environment providing version of Node that meets our version requirement.
 
-See our [Node Support Policy](node-support-policy.md) for our long-term promise regarding Node version support.
+See our [Node Support Policy](../node-support-policy.md) for our long-term promise regarding Node version support.
 
 ## Recommended solution
 
@@ -14,7 +14,7 @@ See our [Node Support Policy](node-support-policy.md) for our long-term promise 
 The recommended approach is to run the `semantic-release` command from a CI job running on the latest available LTS version of node.
 This can either be a job used by your project to test on the latest Node LTS version or a dedicated job for the release steps.
 
-See [CI configuration](../usage/CI%20Configuration/ci-configuration.md) and [CI configuration recipes](../recipes/ci-configurations/README.md#ci-configurations) for more details.
+See [CI configuration](../../usage/CI%20Configuration/ci-configuration.md) and [CI configuration recipes](../../recipes/ci-configurations/README.md#ci-configurations) for more details.
 
 ## Alternative solutions
 
@@ -27,7 +27,7 @@ Use it to execute the `semantic-release` command.
 $ npx -p node@v18-lts -c "npx semantic-release"
 ```
 
-**Note**: See [What is npx](./FAQ.md#what-is-npx) for more details.
+**Note**: See [What is npx](../FAQ.md#what-is-npx) for more details.
 
 ### Use `nvm`
 

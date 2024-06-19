@@ -15,7 +15,7 @@ Find more detail about configuring npm to publish with provenance through semant
 
 [GitHub Actions](https://github.com/features/actions) support [Workflows](https://help.github.com/en/articles/configuring-workflows), allowing to run tests on multiple Node versions and publish a release only when all test pass.
 
-**Note**: The publish pipeline must run on a [Node version that meets our version requirement](../../support/node-version.md).
+**Note**: The publish pipeline must run on a [Node version that meets our version requirement](../../support/Node%20version/node-version.md).
 
 ### `.github/workflows/release.yml` configuration for Node projects
 

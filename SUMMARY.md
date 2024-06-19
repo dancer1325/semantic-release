@@ -41,6 +41,6 @@
 - [Resources](docs/support/resources.md)
 - [Frequently Asked Questions](docs/support/FAQ.md)
 - [Troubleshooting](docs/support/troubleshooting.md)
-- [Node version requirement](docs/support/node-version.md)
+- [Node version requirement](docs/support/Node version/node-version.md)
 - [Node Support Policy](docs/support/node-support-policy.md)
 - [Git version requirement](docs/support/git-version.md)

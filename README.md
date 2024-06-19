@@ -116,7 +116,7 @@ In order to use **semantic-release** you need:
 - To host your code in a [Git repository](https://git-scm.com)
 - Use a CI service that allows you to [securely set up credentials](docs/usage/CI Configuration/ci-configuration.md#authentication)
 - A Git CLI version that meets [our version requirement](docs/support/git-version.md) installed in your CI environment
-- A [Node.js](https://nodejs.org) version that meets [our version requirement](docs/support/node-version.md) installed in your CI environment
+- A [Node.js](https://nodejs.org) version that meets [our version requirement](docs/support/Node version/node-version.md) installed in your CI environment
 
 ## Documentation
 
@@ -143,7 +143,7 @@ In order to use **semantic-release** you need:
   - [Resources](docs/support/resources.md)
   - [Frequently Asked Questions](docs/support/FAQ.md)
   - [Troubleshooting](docs/support/troubleshooting.md)
-  - [Node version requirement](docs/support/node-version.md)
+  - [Node version requirement](docs/support/Node version/node-version.md)
   - [Node Support Policy](docs/support/node-support-policy.md)
 
 ## Get help

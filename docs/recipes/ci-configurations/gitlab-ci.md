@@ -15,7 +15,7 @@ Find more detail about configuring npm to publish with provenance through semant
 
 GitLab CI supports [Pipelines](https://docs.gitlab.com/ee/ci/pipelines.html) allowing to test on multiple Node versions and publishing a release only when all test pass.
 
-**Note**: The publish pipeline must run a [Node version that meets our version requirement](../../support/node-version.md).
+**Note**: The publish pipeline must run a [Node version that meets our version requirement](../../support/Node%20version/node-version.md).
 
 ### `.gitlab-ci.yml` configuration for Node projects
 
