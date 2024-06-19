@@ -22,7 +22,21 @@
     * `debug`
       * TODO:
     * `dryRun`
-      * TODO:
+      * boolean
+        * if you run in CI environment -> `false` default
+        * else -> `true` default
+      * as CLI argument 
+        * `-d` / `--dry-run`
+      * allows
+        * getting a preview of pending release / skips the release steps
+          * publish
+            * **Note:** 👁️nothing is pushed, BUT verify repository push permissions!! 👁️
+          * addChannel
+          * success
+          * fail
+        * printing in the console
+          * next version &
+          * release notes
     * `ci`
       * TODO:
 * Ways to configure
