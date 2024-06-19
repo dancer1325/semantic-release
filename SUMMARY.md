@@ -33,7 +33,7 @@
 ## Developer guide
 
 - [JavaScript API](docs/developer-guide/js-api.md)
-- [Plugin development](docs/developer-guide/plugin.md)
+- [Plugin development](docs/developer-guide/Plugin/plugin.md)
 - [Shareable configuration development](docs/developer-guide/shareable-configuration.md)
 
 ## Support

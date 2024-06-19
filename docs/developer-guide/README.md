@@ -1,5 +1,5 @@
 # Developer guide
 
 - [JavaScript API](js-api.md)
-- [Plugins](plugin.md)
+- [Plugins](Plugin/plugin.md)
 - [Shareable configuration](shareable-configuration.md)

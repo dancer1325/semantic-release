@@ -137,7 +137,7 @@ In order to use **semantic-release** you need:
   - [Release workflow](docs/recipes/release-workflow/README.md)
 - Developer guide
   - [JavaScript API](docs/developer-guide/js-api.md)
-  - [Plugins development](docs/developer-guide/plugin.md)
+  - [Plugins development](docs/developer-guide/Plugin/plugin.md)
   - [Shareable configuration development](docs/developer-guide/shareable-configuration.md)
 - Support
   - [Resources](docs/support/resources.md)
